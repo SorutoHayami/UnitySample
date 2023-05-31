@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: slot_tern2
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"2a002f0a-ac60-4714-9a0e-085c1f4ae4d1","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-254.0,"y":4.0},"guid":"e3393e19-eaa3-4604-bb99-7e9a5bb94a8a","$version":"A","$type":"Unity.VisualScripting.Update","$id":"11"},{"chainable":false,"parameterNames":["eulers"],"member":{"name":"Rotate","parameterTypes":["UnityEngine.Vector3"],"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"%eulers":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":277.0,"y":23.0},"guid":"409b8170-dbe3-49c3-9980-74c41d5f57ab","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"13"},{"defaultValues":{"b":{"x":-10.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":81.0,"y":136.0},"guid":"f7cdc9bd-a8c4-4307-81ba-ef64f8156916","$version":"A","$type":"Unity.VisualScripting.Vector3Multiply","$id":"17"},{"defaultValues":{"Connection":{"$content":0,"$type":"UnityEngine.Object"},"Address":{"$content":"/4/toggle3","$type":"System.String"}},"position":{"x":-277.0,"y":130.0},"guid":"4788f671-7a0e-4a64-ab38-9bd1e0fcee44","$version":"A","$type":"OscJack.VisualScripting.OscVector2Input","$id":"19"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"b56016b7-c16c-4aff-809a-93b322f7788e","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"product","destinationUnit":{"$ref":"13"},"destinationKey":"%eulers","guid":"e1719240-be01-4e96-8039-de536550dd6f","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"Value","destinationUnit":{"$ref":"17"},"destinationKey":"a","guid":"ca90fc10-8e13-4cdb-969c-4687c23ac045","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 02ae4089ae9d4a449857dfcec6ddbf25, type: 2}
